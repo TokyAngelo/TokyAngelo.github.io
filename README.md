@@ -1,2 +1,2 @@
 # TokyAngelo.github.io
-THis is my firts repository on github.
+THis is my first github repository.
