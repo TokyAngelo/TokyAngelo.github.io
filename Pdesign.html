@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" content="text/html">
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Pdeisgn.css">
+        <script src="bootstrap/jquery-3.6.3.js"></script>
+        <title>Perfect Design </title>
+    </head>
+    <body>
+        
+        <div class="container" id="container"> 
+            <div id="contactHead">
+                <div class="checkToggle">
+                   <!-- <input id="classicMode" type="button" name="modeToggle" class="toggleBtn" value="Clair">
+                    -->
+                    <input id="nightMode" type="button" name="" class="toggleBtn" value="Mode sombre">
+                </div>
+                <div id="contactBody">
+                    <input type="text" name="SMS" id="SMS" placeholder="Dites quelque chose.........">
+                    <div id="contactFoot">
+                        <input type="button" id="Okbtn" value="Envoyer">
+                        <input type="button" id="Annulerbtn" value="Annuler">
+                        <button type="reset" id="Resetbtn" value="Recommencer">
+                    </div>
+                </div>
+            </div>
+        
+            <nav>
+                <a href="#" ><img id="lougou" class="logo" src="Perfect Design.png" alt="Clicquez pour passer au mode sombre"></img></a>
+                <ul id="menuList">
+                    <li><a href="Pdesign.html" id="aceuil">Acueil</a> </li>
+                    <li><a href="#" id="nosDomaines">Domaines</a></li>
+                    <li><a href="./Section/Section.html" id="contact">Contact</a></li>
+                    <li><a class="about"  href="#">A propos</a></li>
+                    <li>
+                        <button class="btn" id="displayForm">Connexion</button>
+                    </li>
+                </ul>
+            </nav>
+                <div class="sec-container">
+                    <div id="domaine">
+                        <h1 id="graphismeTitle">Graphic Design</h1>
+                        <p id="graphisme">En premier plan, nous nous focalisons sur le domaine du <strong style="color: orchid ; font-size: large;">Graphisme</strong><br>
+                        C'est le domaine dans lequel nous vous offrons les meilleurs services de traitement qui soient.</p>
+                        <h1 id="multiserviceTitle">Multiservice</h1>
+                        <p id="multiservice">
+                            Perfect Design se lance aussi dans le domaine d'imprimérie au format A4. C'est de la haute qualité que vous ne serez nullement deçu. <br>
+                            N'hesitez pas, visez loin avec <strong style="color: orchid ;"> Perfect Design Multiservice</strong>
+                        </p>
+                    </div>
+                    <div class="form-wrapper">
+                        <div class="card">
+                            <div class="card-header">
+                                <div id="forLogin" class="form-header active">Se connecter</div>
+                                <div id="forRegister" class="form-header">S'inscrire</div>
+                            </div>
+                            <div class="card-body" id="formContainer">
+                                <form id="FormLogin" method="get">
+                                    <input type="text" id="nom" class="form-control" placeholder="@nom d'utilisateur" required/>
+                                    <input type="password" id="input" class="form-control" placeholder="Code d'identification" minlength="8" required/>
+                                    <button id="formButton">Connection</button><br/>
+                                    <p class="mdpo"><a href="#">Mot de passe oublié</a></p>
+                                </form>
+                                <form method="post" action="database.php" id="FormRegister" class="toggleForm">
+                                    <input type="text" id="input" class="form-control" placeholder="@Choisissez un nom" required/>
+                                    <input type="password" id="input" class="form-control" placeholder="Entrez un code de votre choix" minlength="8" required/>
+                                    <input type="password" id="input" class="form-control" placeholder="Confirmez le code que vous avez Choisi" minlength="8" required />
+                                    <button id="formButton">Inscription</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div> 
+        </div>
+       <script language="javascript" src="Pdeisgn.js"></script>
+    </body>
+</html>
